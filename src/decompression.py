@@ -51,7 +51,7 @@ def decompressione(secret_key: str, mode: int):
 
     # IMTF
 
-    mtfStartTime = time.time()
+    '''mtfStartTime = time.time()
 
     block_size = 1024 #1/2((math.log2(len(stringInput))/math.log2(len(dictionary)))) The real formula is this one
 
@@ -64,11 +64,11 @@ def decompressione(secret_key: str, mode: int):
     #print("-----MTF: " + mtfDecodedString)
 
     mtfElapsedTime = time.time() - mtfStartTime
-    print(str(mtfElapsedTime) + "  -> elapsed time of I-BMTF")
+    print(str(mtfElapsedTime) + "  -> elapsed time of I-BMTF")'''
 
     # IMTF PARALLELIZED
 
-    '''mtfStartTime = time.time()
+    mtfStartTime = time.time()
 
     block_size = 1024  # 1/2((math.log2(len(stringInput))/math.log2(len(dictionary)))) The real formula is this one
 
@@ -81,7 +81,7 @@ def decompressione(secret_key: str, mode: int):
     # print("-----MTF: " + mtfDecodedString)
 
     mtfElapsedTime = time.time() - mtfStartTime
-    print(str(mtfElapsedTime) + "  -> elapsed time of I-BMTF PARALLELIZED")'''
+    print(str(mtfElapsedTime) + "  -> elapsed time of I-BMTF PARALLELIZED")
 
     # IBWT
 
